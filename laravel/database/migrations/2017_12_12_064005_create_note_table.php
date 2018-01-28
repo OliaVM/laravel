@@ -18,9 +18,9 @@ class CreateNoteTable extends Migration
             $table->string('user_id');
             $table->string('note_date');
             $table->string('note_title');
-            $table->string('note_text');
+            $table->string('note_text', 5000);
             //$table->string('new');
-            $table->timestamps();
+            //$table->timestamps();
         });
     }
 
